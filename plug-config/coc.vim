@@ -13,7 +13,8 @@ let g:coc_global_extensions = [
   \ 'coc-go',
   \ 'coc-css',
   \ 'coc-omnisharp',
-  \ 'coc-yaml'
+  \ 'coc-yaml',
+  \ 'coc-powershell',
   \ ]
 " TextEdit might fail if hidden is not set.
 set hidden
