@@ -14,7 +14,9 @@
     "python",
     "go",
     "csharp",
-    "prisma"
+    "prisma",
+    "C",
+    "c"
   ],
   // python
   "python.linting.enabled": true,
