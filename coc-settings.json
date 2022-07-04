@@ -15,9 +15,11 @@
     "go",
     "csharp",
     "prisma",
-    "C",
-    "c"
+    "c",
+    "cpp",
+    "h"
   ],
+  "clangd.fallbackFlags": [ "-std=c++17" ],
   // python
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
