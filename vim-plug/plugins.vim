@@ -51,6 +51,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " vim AI"
     Plug 'madox2/vim-ai'
 
+    Plug 'nvim-lua/plenary.nvim'
+
+    Plug 'jose-elias-alvarez/null-ls.nvim'
+
 call plug#end()
 
 " colorscheme gruvbox
@@ -58,6 +62,18 @@ call plug#end()
 " open NERDTree automatically
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree
+autocmd BufWritePre *.py lua vim.lsp.buf.format({ timeout_ms = 1000 })
+
+lua << EOF
+  local null_ls = require("null-ls")
+
+  null_ls.setup({
+    sources = {
+      null_ls.builtins.formatting.black,  -- Use black for Python formatting
+    },
+  })
+EOF
+
 
 highlight! link NERDTreeFlags NERDTreeDir
 
