@@ -48,6 +48,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'hashivim/vim-terraform'     
     " C#
     Plug 'OmniSharp/omnisharp-vim' 
+    " vim AI"
+    Plug 'madox2/vim-ai'
 
 call plug#end()
 
