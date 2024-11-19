@@ -22,9 +22,10 @@
   "clangd.fallbackFlags": [ "-std=c++17" ],
   // python
   "pyright.enable": true,
+  "python.pythonPath": "/usr/bin/python3",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.local/bin/black",
   "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
+  "python.linting.pylintEnabled": false,
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
 }
