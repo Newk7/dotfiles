@@ -8,6 +8,7 @@
     "javascriptreact",
     "typescript.tsx",
     "graphql",
+    "python",
     "html",
     "yaml",
     "json",
@@ -20,18 +21,10 @@
   ],
   "clangd.fallbackFlags": [ "-std=c++17" ],
   // python
+  "pyright.enable": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/.local/bin/black",
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
-  // // Golang
-  // "languageserver": {
-  //   "go": {
-  //     "command": "gopls",
-  //     "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-  //     "filetypes": ["go"],
-  //     "initializationOptions": {
-  //       "usePlaceholders": true
-  //     }
-  //   }
-  // }
 }
