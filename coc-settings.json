@@ -20,6 +20,7 @@
   ],
   "clangd.fallbackFlags": [ "-std=c++17" ],
   // python
+  "python.pythonPath": "python3",
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
