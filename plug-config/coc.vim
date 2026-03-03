@@ -7,7 +7,6 @@ let g:coc_global_extensions = [
   \ 'coc-vimlsp',
   \ 'coc-sql',
   \ 'coc-clangd',
-  \ 'coc-python',
   \ 'coc-prisma',
   \ 'coc-html',
   \ 'coc-go',
@@ -15,6 +14,7 @@ let g:coc_global_extensions = [
   \ 'coc-omnisharp',
   \ 'coc-yaml',
   \ 'coc-powershell',
+  \ 'coc-pyright'
   \ ]
 " TextEdit might fail if hidden is not set.
 set hidden

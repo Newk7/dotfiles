@@ -100,6 +100,13 @@ else
 cp ~/.config/nvim/.p10k.zsh ~/
 cp ~/.config/nvim/.tmux.conf ~/
 cp ~/.config/nvim/.zshrc ~/
+
+
+#NOTES:
+# you need to make sure to use PlugInstall and PlugUpdate / PlugUpgrade to ensure the neovim plugs get installed
+# You need to install the NF fonts and other fonts
+# You need to set up ZSH again using p10k
+
 # Copy Alacritty set up if ubuntu
 [ -n "$(uname -a | grep Ubuntu)" ] && cp -r ~/.config/nvim/alacritty ~/.config
 
