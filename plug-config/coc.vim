@@ -8,7 +8,7 @@ let g:coc_global_extensions = [
   \ 'coc-vimlsp',
   \ 'coc-sql',
   \ 'coc-sh',
-  \ 'coc-python',
+  \ 'coc-pyright',
   \ 'coc-prisma',
   \ 'coc-html',
   \ 'coc-go',

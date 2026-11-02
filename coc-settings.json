@@ -16,9 +16,10 @@
     "csharp",
     "prisma"
   ],
-  // python
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
+  // python (coc-pyright); ruff via uv tool
+  "python.pythonPath": "python3",
+  "python.formatting.provider": "ruff",
+  "python.linting.ruffEnabled": true,
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
   // // Golang
   // "languageserver": {
