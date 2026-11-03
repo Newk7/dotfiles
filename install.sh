@@ -51,6 +51,10 @@ link "$DOTFILES/zshrc"      "$HOME/.zshrc"
 link "$DOTFILES/.tmux.conf" "$HOME/.tmux.conf"
 link "$DOTFILES"            "$HOME/.config/nvim"   # repo is laid out as an nvim config
 [[ -f "$DOTFILES/p10k.zsh" ]] && link "$DOTFILES/p10k.zsh" "$HOME/.p10k.zsh"
+mkdir -p "$HOME/.local/bin" "$HOME/Applications"
+for f in "$DOTFILES"/bin/*; do link "$f" "$HOME/.local/bin/$(basename "$f")"; done
+[[ -d "$HOME/Applications/Newkster.app" ]] || osacompile -o "$HOME/Applications/Newkster.app" \
+  -e 'do shell script "$HOME/.local/bin/newkster >/dev/null 2>&1 &"'
 
 info "Neovim providers (pynvim venv + node host)"
 NVIM_PY="$HOME/.local/share/nvim-python"
