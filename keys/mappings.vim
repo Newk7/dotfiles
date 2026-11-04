@@ -8,6 +8,12 @@ nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
+" Ctrl + Up/Down to scroll half a page (nnoremap = uses built-in <C-u>, not the CAPS mapping below)
+nnoremap <C-Up>   <C-u>
+nnoremap <C-Down> <C-d>
+vnoremap <C-Up>   <C-u>
+vnoremap <C-Down> <C-d>
+
 " Reload nvim
 nnoremap <M-v> :source $MYVIMRC<CR>
 
